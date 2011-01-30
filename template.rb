@@ -70,7 +70,9 @@ generate(:controller, "home index")
 gsub_file 'config/routes.rb', /get \"home\/index\"/, 'root :to => "home#index"'
 append_file 'app/views/home/index.html.haml'do <<-FILE
 !!!
-%p{:class => "hello", :id => "message"} Hello, World!
+%h2{:class => "subtitle"} Get Started
+%p{}:class => "content"} Update with application.js with your logic
+%div{:class => "container", :id => "container"} 
 FILE
 end
 
@@ -100,8 +102,12 @@ end
 # Add Stylesheets
 #----------------------------------------------------------------------------
 create_file 'public/stylesheets/application.css' do <<-FILE
-p.hello {
-  color: red;
+div.container {
+  width: 100%;
+  height: 100px; 
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
 }
 FILE
 end
