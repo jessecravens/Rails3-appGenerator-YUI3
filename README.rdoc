@@ -1,0 +1,27 @@
+= YUI3 Rails Application Template
+
+Goal[http://jessecravens.com/01302011/yui3-rails-application-template]
+
+Generates a Rails app; includes YUI3, Haml, RSpec, Cucumber, WebRat, Factory Girl ...
+
+== Generating an Application
+
+In <b>Rails 3</b>, navigate to your projects directory, and create a custom templates directory if you don't already have one
+
+  mkdir tmpls
+
+Clone the template.rb file to your custom templates directory
+
+  git clone git://github.com/jessecravens/yui3-rails-template.git path_to_templates
+
+Generate a new app named YUI3app, or whatever you like
+
+  rails new YUI3app -m path_to_templates/template.rb
+
+Navigate to the new directory
+
+  cd YUI3app
+
+Start your server
+
+  rails s
